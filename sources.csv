@@ -18,3 +18,5 @@ S16,A,U.S. imports from Iraq,EIA,2026-08-07,W,official_weak_proxy,https://www.ei
 S17,A,H1 2026 Iraq oil totals,Shafaq citing SOMO,2026-06-30,H,media_crosscheck,https://shafaq.com/amp/en/Economy/Iraq-oil-revenues-fall-in-first-half-2026,268.092m barrels and USD18.679bn
 S18,A,July salary payment pressure,The National citing Ministry of Finance,2026-08-04,E,event_signal,https://www.thenationalnews.com/news/mena/2026/08/04/iraq-struggles-with-july-salary-payments-as-oil-revenue-fails-to-cover-budget/,Monthly salary pension and welfare cost around USD6.5bn
 S19,A,Delayed salaries protest,Kurdistan24,2026-08-05,E,event_crosscheck,https://www.kurdistan24.net/en/story/930480,Employees across ministries reported July wage delays
+S20,B,Official daily USD rate,Central Bank of Iraq,2026-09-02,D,official,https://www.cbi.iq/,Official homepage displayed 1310 IQD per USD when checked 2026-09-02
+S21,B,Baghdad Erbil Basra parallel FX,IraqiNews,2026-09-02,D,media_crosscheck,https://www.iraqinews.com/iraq/us-dollar-exchange-rates-iraq-baghdad-erbil-basra-september-2-2026/,Baghdad and Basra selling 154750 IQD per USD100; premium 18.1 percent versus CBI 1310
