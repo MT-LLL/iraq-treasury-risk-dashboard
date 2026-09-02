@@ -1,0 +1,15 @@
+id,layer,source,publisher,as_of,frequency,status,url,note
+S01,A,CBI financial position tables,Central Bank of Iraq,2026-05,M,official,https://www.cbi.iq/page/73,Official monthly balance-sheet entry point
+S02,A,SOMO monthly export workbook index,SOMO,2026-06,M,official,https://www.somooil.gov.iq/annual-summary-chart,Official workbook index lists Apr and May-Jun 2026
+S03,A,April export statistics,IraqiNews citing Oil Ministry/SOMO,2026-04,M,cross-check,https://www.iraqinews.com/iraq/iraq-somo-oil-export-revenue-drop-april-2026/,9884130 bbl and USD 1.087082bn
+S04,A,2025 Article IV,IMF,2025-07,A,official,https://www.imf.org/en/publications/cr/issues/2025/07/11/iraq-2025-article-iv-consultation-press-release-staff-report-and-informational-annex-568569,Structural fiscal and reserve baseline
+S05,B,Official restricted-dollar lists,Central Bank of Iraq,2026-02-22,E,official,https://www.cbi.iq/news/view/3135,28 restricted banks plus separate blacklisted set
+S06,B,Seven banks reintegration update,Central Bank of Iraq,2026-07-18,E,official,https://cbi.iq/news/view/3263,Non-USD channels conditional on reform compliance
+S07,B,Baghdad market FX,Shafaq News,2026-08-31,D,media,https://www.shafaq.com/en/Economy/USD-IQD-exchange-rates-stabilize-around-154-000-IQD-in-Baghdad-Erbil,154500 IQD per USD100 selling
+S08,B,Official FX stability statement,Central Bank of Iraq,2026-06-22,E,official,https://cbi.iq/news/print_news/3231,CBI says legitimate USD demand continues under controls
+S09,B,OFAC Iraq oil-sector action,U.S. Treasury,2026-05-07,E,official,https://home.treasury.gov/news/press-releases/sb0492,Designations involving Iraqi oil-sector and militia networks
+S10,B,OFAC Iran shadow-banking action,U.S. Treasury,2026-08-07,E,official,https://home.treasury.gov/news/press-releases/sb0596,Relevant to correspondent-bank compliance intensity
+S11,C,Zain Group Q2 and H1 results,Zain Group,2026-08-10,Q,official,https://www.zain.com/en/press-release/zaingroup2026-q2,Zain Iraq revenue EBITDA profit and subscribers
+S12,C,Zain Iraq FY2025 operations,Zain Group,2025-12-31,A,official,https://zain.com/AR2025/zain-operations/,FY revenue EBITDA capex subscribers
+S13,C,Ooredoo Q2 supplementary schedule,Ooredoo Group,2026-06-30,Q,official,https://www.ooredoo.com/wp-content/uploads/2026/07/Supplementary-Schedules-Q2-2026.pdf,Iraq QAR and IQD operations data and subscribers
+S14,C,Ooredoo investor hub,Ooredoo Group,2026-07-28,Q,official,https://www.ooredoo.com/en/investors/financial_information/quarterly-analyst-presentations/,Official report index
