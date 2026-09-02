@@ -13,3 +13,8 @@ S11,C,Zain Group Q2 and H1 results,Zain Group,2026-08-10,Q,official,https://www.
 S12,C,Zain Iraq FY2025 operations,Zain Group,2025-12-31,A,official,https://zain.com/AR2025/zain-operations/,FY revenue EBITDA capex subscribers
 S13,C,Ooredoo Q2 supplementary schedule,Ooredoo Group,2026-06-30,Q,official,https://www.ooredoo.com/wp-content/uploads/2026/07/Supplementary-Schedules-Q2-2026.pdf,Iraq QAR and IQD operations data and subscribers
 S14,C,Ooredoo investor hub,Ooredoo Group,2026-07-28,Q,official,https://www.ooredoo.com/en/investors/financial_information/quarterly-analyst-presentations/,Official report index
+S15,A,Hormuz transit tracker,Global Energy Flow / Lloyd's List,2026-08-23,W,weekly_proxy,https://global-energy-flow.com/hormuz/,114 weekly transits corrected from stale 73; counts are a floor due dark sailing
+S16,A,U.S. imports from Iraq,EIA,2026-08-07,W,official_weak_proxy,https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=4&n=PET&s=W_EPC0_IM0_NUS-NIZ_MBBLD,Useful only for detecting movement not total Iraq exports
+S17,A,H1 2026 Iraq oil totals,Shafaq citing SOMO,2026-06-30,H,media_crosscheck,https://shafaq.com/amp/en/Economy/Iraq-oil-revenues-fall-in-first-half-2026,268.092m barrels and USD18.679bn
+S18,A,July salary payment pressure,The National citing Ministry of Finance,2026-08-04,E,event_signal,https://www.thenationalnews.com/news/mena/2026/08/04/iraq-struggles-with-july-salary-payments-as-oil-revenue-fails-to-cover-budget/,Monthly salary pension and welfare cost around USD6.5bn
+S19,A,Delayed salaries protest,Kurdistan24,2026-08-05,E,event_crosscheck,https://www.kurdistan24.net/en/story/930480,Employees across ministries reported July wage delays
