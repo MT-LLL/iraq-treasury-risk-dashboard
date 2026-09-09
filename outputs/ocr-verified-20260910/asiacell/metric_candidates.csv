@@ -1,0 +1,18 @@
+﻿source,field,page,ocr_confidence,alias_score,matched_alias,numbers,evidence_text,bbox
+ocr,current_assets,2,28.2,0.667,مجموع الأصول المتداولة,15 | 49962 | 48961 | 49962 | 0 | 1 | 41 | 1 | 148 | 15 | 14,"aga as الأخري‎ الأصول مجموع | 15 a ae اب‎ سج | 49,962 48,961 49,962 الهرؤةشطل‎ 0 1 | 41 هكف‎ 1 العقرد عن الناشنة الحقوق 148 | الملموسة‎ غير الأاصسرل 15 | الأخرى‎ الأول 14","851,1117,981,81"
+ocr,revenue,3,83.0,0.667,إيراد النشاط الجاري,975580 | 430 | 513249 | 42 | 3,"975,580 430 513,249 الجاري النشاط إيرادات 42-3","795,805,1234,78"
+ocr,cash,4,63.0,1.0,النقد,251 | 2.037 | 1,التشغيلية الأنشطة من النقدى الكطق | )251( )2.037( المغزون 1,"1503,871,349,53"
+ocr,cash,4,53.8,1.0,النقد,159133 | 127689 | 8,"التمويلية الإنشطقة من النقدى التداق | )159,133( )127,689( الموزءة الإرباح 8","1510,1692,343,51"
+ocr,cash,4,57.88,1.0,النقد,189133 | 427689,")189,133( )427,689( التمويلية الألشحلة عن النقدى التدفق صافى","437,1864,1419,58"
+ocr,cash,4,58.5,1.0,النقد,522206 | 1742 | 2025 | 12 | 31,__- .522206 _—— 1742 2025/12/31 في كما رمعلالاته النقد رصيد : يضاف,"367,1974,1491,66"
+reviewed_profile,cash,2,63.0,1,SHA-256 locked reviewed evidence,362971,"النقد 362,971",
+reviewed_profile,current_liabilities,2,,1,SHA-256 locked reviewed evidence,743121,"مجموع الالتزامات المتداولة 743,121",
+reviewed_profile,current_assets,2,28.2,1,SHA-256 locked reviewed evidence,680435,"مجموع الأصول المتداولة 680,435",
+reviewed_profile,cfo,4,,1,SHA-256 locked reviewed evidence,287775,"صافي التدفقات النقدية من الأنشطة التشغيلية 287,775",
+reviewed_profile,capex,4,,1,SHA-256 locked reviewed evidence,124088,"شراء الموجودات الثابتة والمشروعات تحت التنفيذ (124,088)",
+reviewed_profile,ebitda,3,,1,SHA-256 locked reviewed evidence,454493,"Q1 220,614 + Q2 233,879 = H1 454,493",
+reviewed_profile,interest_bearing_debt,2,,1,SHA-256 locked reviewed evidence,452335,"138,529 + 93,634 + 175,291 + 44,881",
+reviewed_profile,ar,2,,1,SHA-256 locked reviewed evidence,113537,"الذمم المدينة 113,537",
+reviewed_profile,revenue,3,83.0,1,SHA-256 locked reviewed evidence,1006430,"إيرادات النشاط الجاري 1,006,430",
+reviewed_profile,ap,2,,1,SHA-256 locked reviewed evidence,567830,"الذمم الدائنة 567,830",
+reviewed_profile,available_cash,2,,1,SHA-256 locked reviewed evidence,362971,"النقد 362,971",

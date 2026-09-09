@@ -1,0 +1,15 @@
+﻿field,label_zh,value,unit,period,status,page,verification_method,evidence_text,ocr_confidence,note
+cash,现金及现金等价物,362971,IQD million,2026-06-30 / H1 2026,verified,2,扫描页目视复核 + 期末现金勾稽,"النقد 362,971",63.0,
+current_liabilities,流动负债,743121,IQD million,2026-06-30 / H1 2026,verified,2,扫描页目视复核 + 负债权益平衡,"مجموع الالتزامات المتداولة 743,121",,
+current_assets,流动资产,680435,IQD million,2026-06-30 / H1 2026,verified,2,扫描页目视复核 + 分项加总,"مجموع الأصول المتداولة 680,435",28.2,
+cfo,经营现金流 CFO,287775,IQD million,2026-06-30 / H1 2026,verified,4,扫描页目视复核 + 现金变动勾稽,"صافي التدفقات النقدية من الأنشطة التشغيلية 287,775",,
+capex,资本开支 Capex,124088,IQD million,2026-06-30 / H1 2026,verified,4,扫描页目视复核；现金流口径,"شراء الموجودات الثابتة والمشروعات تحت التنفيذ (124,088)",,
+ebitda,EBITDA,454493,IQD million,2026-06-30 / H1 2026,verified_external,3,官方Ooredoo分部表交叉核验,"Q1 220,614 + Q2 233,879 = H1 454,493",,扫描报表未直接列示EBITDA；以同周期官方经营分部数据补充
+interest_bearing_debt,有息负债,452335,IQD million,2026-06-30 / H1 2026,review_classification,2,债务及租赁负债分项加总,"138,529 + 93,634 + 175,291 + 44,881",,需确认租赁负债和长期负债是否全部计息
+interest_expense,利息费用,,IQD million,2026-06-30 / H1 2026,missing,,未检出,,,本扫描报表未单独列示
+ar,应收账款 AR,113537,IQD million,2026-06-30 / H1 2026,verified,2,扫描页目视复核,"الذمم المدينة 113,537",,
+revenue,Revenue,1006430,IQD million,2026-06-30 / H1 2026,verified_external,3,扫描页目视复核 + Ooredoo季度加总交叉核验,"إيرادات النشاط الجاري 1,006,430",83.0,
+ap,应付账款 AP,567830,IQD million,2026-06-30 / H1 2026,verified,2,扫描页目视复核,"الذمم الدائنة 567,830",,
+cogs,COGS,,IQD million,2026-06-30 / H1 2026,missing,,未检出,,,报表仅列经营费用，无法与模型COGS口径一一对应
+our_ar,我方 AR,,IQD million,2026-06-30 / H1 2026,missing,,未检出,,,内部数据，公开财报不提供
+available_cash,可动用现金,362971,IQD million,2026-06-30 / H1 2026,review_restriction,2,以账面现金为上限,"النقد 362,971",,需核对受限现金附注，不能直接视为全部可动用

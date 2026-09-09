@@ -1,0 +1,64 @@
+{
+  "tasc_q2_2026": {
+    "entity": "Asiacell Communications PJSC",
+    "operator_code": "TASC",
+    "period": "2026-06-30 / H1 2026",
+    "unit": "IQD million",
+    "financial_pages": [2, 3, 4],
+    "sha256": "f37e75083d126e1237408709d146ceb7a482adb7b760bce3e81901a988ef2c2a",
+    "source_url": "https://uploads.isc.gov.iq/upload/2026/08/11/6a7af9bc8d298.pdf",
+    "metrics": {
+      "cash": {"label_zh": "现金及现金等价物", "value": 362971, "page": 2, "status": "verified", "verification_method": "扫描页目视复核 + 期末现金勾稽", "evidence_text": "النقد 362,971"},
+      "current_liabilities": {"label_zh": "流动负债", "value": 743121, "page": 2, "status": "verified", "verification_method": "扫描页目视复核 + 负债权益平衡", "evidence_text": "مجموع الالتزامات المتداولة 743,121"},
+      "current_assets": {"label_zh": "流动资产", "value": 680435, "page": 2, "status": "verified", "verification_method": "扫描页目视复核 + 分项加总", "evidence_text": "مجموع الأصول المتداولة 680,435"},
+      "cfo": {"label_zh": "经营现金流 CFO", "value": 287775, "page": 4, "status": "verified", "verification_method": "扫描页目视复核 + 现金变动勾稽", "evidence_text": "صافي التدفقات النقدية من الأنشطة التشغيلية 287,775"},
+      "capex": {"label_zh": "资本开支 Capex", "value": 124088, "page": 4, "status": "verified", "verification_method": "扫描页目视复核；现金流口径", "evidence_text": "شراء الموجودات الثابتة والمشروعات تحت التنفيذ (124,088)"},
+      "ebitda": {"label_zh": "EBITDA", "value": 454493, "page": 3, "status": "verified_external", "verification_method": "官方Ooredoo分部表交叉核验", "evidence_text": "Q1 220,614 + Q2 233,879 = H1 454,493", "note": "扫描报表未直接列示EBITDA；以同周期官方经营分部数据补充"},
+      "interest_bearing_debt": {"label_zh": "有息负债", "value": 452335, "page": 2, "status": "review_classification", "verification_method": "债务及租赁负债分项加总", "evidence_text": "138,529 + 93,634 + 175,291 + 44,881", "note": "需确认租赁负债和长期负债是否全部计息"},
+      "interest_expense": {"label_zh": "利息费用", "status": "missing", "note": "本扫描报表未单独列示"},
+      "ar": {"label_zh": "应收账款 AR", "value": 113537, "page": 2, "status": "verified", "verification_method": "扫描页目视复核", "evidence_text": "الذمم المدينة 113,537"},
+      "revenue": {"label_zh": "Revenue", "value": 1006430, "page": 3, "status": "verified_external", "verification_method": "扫描页目视复核 + Ooredoo季度加总交叉核验", "evidence_text": "إيرادات النشاط الجاري 1,006,430"},
+      "ap": {"label_zh": "应付账款 AP", "value": 567830, "page": 2, "status": "verified", "verification_method": "扫描页目视复核", "evidence_text": "الذمم الدائنة 567,830"},
+      "cogs": {"label_zh": "COGS", "status": "missing", "note": "报表仅列经营费用，无法与模型COGS口径一一对应"},
+      "our_ar": {"label_zh": "我方 AR", "status": "missing", "note": "内部数据，公开财报不提供"},
+      "available_cash": {"label_zh": "可动用现金", "value": 362971, "page": 2, "status": "review_restriction", "verification_method": "以账面现金为上限", "evidence_text": "النقد 362,971", "note": "需核对受限现金附注，不能直接视为全部可动用"}
+    },
+    "checks": [
+      {"name": "流动资产分项加总", "lhs": [14006, 113537, 362971, 189921], "rhs": [680435], "tolerance": 0.5},
+      {"name": "资产=负债+权益", "lhs": [2578014], "rhs": [232163, 743121, 240079, 51529, 1311122], "tolerance": 0.5},
+      {"name": "现金期初+净变动=期末", "lhs": [301742, 61229], "rhs": [362971], "tolerance": 0.5},
+      {"name": "CFO+投资+融资=现金净变动", "lhs": [287775, -98877, -127669], "rhs": [61229], "tolerance": 0.5}
+    ]
+  },
+  "tzni_q2_2026": {
+    "entity": "Al-Khatem Telecommunications / Zain Iraq",
+    "operator_code": "TZNI",
+    "period": "2026-06-30 / H1 2026",
+    "unit": "IQD million",
+    "financial_pages": [4, 5, 6, 8],
+    "sha256": "fb13f0d98ae2d18b33a3bf1f6db4db05821eabdaf6fa781a950b58b86573057a",
+    "source_url": "https://uploads.isc.gov.iq/upload/2026/08/31/6a9554bede623.pdf",
+    "metrics": {
+      "cash": {"label_zh": "现金及现金等价物", "value": 139867, "page": 4, "status": "verified", "verification_method": "资产负债表 + 现金流量表双页复核", "evidence_text": "صافي النقود 139,867"},
+      "current_liabilities": {"label_zh": "流动负债", "value": 994975, "page": 5, "status": "verified", "verification_method": "扫描页目视复核 + 负债权益平衡", "evidence_text": "مجموع الالتزامات المتداولة 994,975"},
+      "current_assets": {"label_zh": "流动资产", "value": 995446, "page": 4, "status": "verified", "verification_method": "扫描页目视复核", "evidence_text": "مجموع الأصول المتداولة 995,446"},
+      "cfo": {"label_zh": "经营现金流 CFO", "value": -186909, "page": 8, "status": "verified", "verification_method": "扫描页目视复核 + 现金变动勾稽", "evidence_text": "صافي النقد الناتج من الانشطة التشغيلية (186,909)"},
+      "capex": {"label_zh": "资本开支 Capex", "value": 223993, "page": 8, "status": "verified", "verification_method": "扫描页目视复核；现金流口径", "evidence_text": "زيادة في الموجودات الثابتة خلال السنة (223,993)"},
+      "ebitda": {"label_zh": "EBITDA", "value": 299181, "page": 6, "status": "review_derived", "verification_method": "经营盈余+利息+折旧摊销推导", "evidence_text": "107,216 + 46,960 + 145,005 = 299,181", "note": "扫描报表未直接列示EBITDA；需与集团口径最终确认"},
+      "interest_bearing_debt": {"label_zh": "有息负债", "value": 1157095, "page": 5, "status": "review_classification", "verification_method": "长短期负债及租赁负债加总", "evidence_text": "96,748 + 740,520 + 224,639 + 95,188", "note": "需确认各负债项目计息属性"},
+      "interest_expense": {"label_zh": "利息费用", "value": 46960, "page": 6, "status": "verified", "verification_method": "扫描页目视复核", "evidence_text": "فوائد مدينة (46,960)"},
+      "ar": {"label_zh": "应收账款 AR", "value": 558304, "page": 4, "status": "verified", "verification_method": "应收账款扣除坏账准备", "evidence_text": "615,408 - 57,104 = 558,304"},
+      "revenue": {"label_zh": "Revenue", "value": 870817, "page": 6, "status": "verified_external", "verification_method": "扫描页目视复核 + Zain集团H1披露换算交叉核验", "evidence_text": "إيراد النشاط الجاري 870,817"},
+      "ap": {"label_zh": "应付账款 AP", "value": 770336, "page": 5, "status": "verified", "verification_method": "扫描页目视复核", "evidence_text": "الذمم الدائنة 770,336"},
+      "cogs": {"label_zh": "COGS", "value": 170055, "page": 6, "status": "verified", "verification_method": "扫描页目视复核", "evidence_text": "COGS (170,055)", "note": "不含CMC监管分成111,547"},
+      "our_ar": {"label_zh": "我方 AR", "status": "missing", "note": "内部数据，公开财报不提供"},
+      "available_cash": {"label_zh": "可动用现金", "value": 139867, "page": 4, "status": "review_restriction", "verification_method": "以账面现金为上限", "evidence_text": "صافي النقود 139,867", "note": "需核对受限现金附注，不能直接视为全部可动用"}
+    },
+    "checks": [
+      {"name": "资产构成加总", "lhs": [1178947, 445375, 995446, 1725861], "rhs": [4345629], "tolerance": 0.5},
+      {"name": "资产=负债+权益", "lhs": [4345629], "rhs": [837268, 994975, 100746, 123468, 2289172], "tolerance": 0.5},
+      {"name": "现金期初+净变动=期末", "lhs": [156450, -16583], "rhs": [139867], "tolerance": 0.5},
+      {"name": "CFO+投资+融资=现金净变动", "lhs": [-186909, 114139, 56187], "rhs": [-16583], "tolerance": 0.5}
+    ]
+  }
+}

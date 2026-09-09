@@ -1,0 +1,11 @@
+order,dimension,indicator,formula,weight_pct,direction,good_rule,average_rule,risk_rule,good_band_score,average_band_score,risk_band_score,current_value,data_status
+1,现金,Cash / Current Liabilities,现金及现金等价物 / 流动负债,15,higher_is_better,>30%,15%-30%,<15%,100,60,0,NA,pending_customer_financials
+2,流动性,Current Ratio,流动资产 / 流动负债,10,higher_is_better,>1.5x,1.0x-1.5x,<1.0x,100,60,0,NA,pending_customer_financials
+3,经营现金流,CFO / Current Liabilities,经营现金流 / 流动负债,10,higher_is_better,>30%,10%-30%,<10%,100,60,0,NA,pending_customer_financials
+4,自由现金流,FCF,CFO - Capex,15,higher_is_better,>0,接近0,<0,100,60,0,NA,pending_customer_financials
+5,现金转化,CFO / EBITDA,经营现金流 / EBITDA,10,higher_is_better,>70%,40%-70%,<40%,100,60,0,NA,pending_customer_financials
+6,杠杆,Net Debt / EBITDA,(有息负债 - 现金) / EBITDA,10,lower_is_better,<2.0x,2.0x-3.0x,>3.0x,100,60,0,NA,pending_customer_financials
+7,偿债,Interest Coverage,EBITDA / 利息费用,10,higher_is_better,>5.0x,2.0x-5.0x,<2.0x,100,60,0,NA,pending_customer_financials
+8,回款,DSO,应收账款 / Revenue * 365,5,lower_is_better,<60 days,60-90 days,>90 days,100,60,0,NA,pending_customer_financials
+9,供应商付款,Payable Days,应付账款 / COGS * 365,5,lower_is_better,<90 days,90-120 days,>120 days,100,60,0,NA,pending_customer_financials
+10,我方风险敞口,Our AR / Available Cash,我方AR / 可动用现金,10,lower_is_better,<20%,20%-40%,>40%,100,60,0,NA,pending_internal_ar_and_customer_cash

@@ -1,0 +1,15 @@
+﻿field,label_zh,value,unit,period,status,page,verification_method,evidence_text,ocr_confidence,note
+cash,现金及现金等价物,139867,IQD million,2026-06-30 / H1 2026,verified,4,资产负债表 + 现金流量表双页复核,"صافي النقود 139,867",75.17,
+current_liabilities,流动负债,994975,IQD million,2026-06-30 / H1 2026,verified,5,扫描页目视复核 + 负债权益平衡,"مجموع الالتزامات المتداولة 994,975",66.6,
+current_assets,流动资产,995446,IQD million,2026-06-30 / H1 2026,verified,4,扫描页目视复核,"مجموع الأصول المتداولة 995,446",84.25,
+cfo,经营现金流 CFO,-186909,IQD million,2026-06-30 / H1 2026,verified,8,扫描页目视复核 + 现金变动勾稽,"صافي النقد الناتج من الانشطة التشغيلية (186,909)",,
+capex,资本开支 Capex,223993,IQD million,2026-06-30 / H1 2026,verified,8,扫描页目视复核；现金流口径,"زيادة في الموجودات الثابتة خلال السنة (223,993)",73.86,
+ebitda,EBITDA,299181,IQD million,2026-06-30 / H1 2026,review_derived,6,经营盈余+利息+折旧摊销推导,"107,216 + 46,960 + 145,005 = 299,181",,扫描报表未直接列示EBITDA；需与集团口径最终确认
+interest_bearing_debt,有息负债,1157095,IQD million,2026-06-30 / H1 2026,review_classification,5,长短期负债及租赁负债加总,"96,748 + 740,520 + 224,639 + 95,188",72.67,需确认各负债项目计息属性
+interest_expense,利息费用,46960,IQD million,2026-06-30 / H1 2026,verified,6,扫描页目视复核,"فوائد مدينة (46,960)",51.25,
+ar,应收账款 AR,558304,IQD million,2026-06-30 / H1 2026,verified,4,应收账款扣除坏账准备,"615,408 - 57,104 = 558,304",50.17,
+revenue,Revenue,870817,IQD million,2026-06-30 / H1 2026,verified_external,6,扫描页目视复核 + Zain集团H1披露换算交叉核验,"إيراد النشاط الجاري 870,817",54.83,
+ap,应付账款 AP,770336,IQD million,2026-06-30 / H1 2026,verified,5,扫描页目视复核,"الذمم الدائنة 770,336",39.14,
+cogs,COGS,170055,IQD million,2026-06-30 / H1 2026,verified,6,扫描页目视复核,"COGS (170,055)",59.88,"不含CMC监管分成111,547"
+our_ar,我方 AR,,IQD million,2026-06-30 / H1 2026,missing,,未检出,,,内部数据，公开财报不提供
+available_cash,可动用现金,139867,IQD million,2026-06-30 / H1 2026,review_restriction,4,以账面现金为上限,"صافي النقود 139,867",,需核对受限现金附注，不能直接视为全部可动用
