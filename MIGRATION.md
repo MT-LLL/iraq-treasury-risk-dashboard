@@ -42,7 +42,7 @@ python3 server.py
 
 On macOS, `start_dashboard.command` can be opened directly instead of typing the final command.
 
-Open <http://127.0.0.1:8088>. The integrated workflow is:
+Open <http://127.0.0.1:8099>. The integrated workflow is:
 
 1. Upload a PDF in **扫描财报 OCR**.
 2. Let SHA-256 select the reviewed operator profile, or choose one explicitly.
@@ -51,7 +51,7 @@ Open <http://127.0.0.1:8088>. The integrated workflow is:
 5. Recalculate the 10 metrics and confirm the five Red Flags.
 6. Download the privacy-minimised run JSON if an audit copy is needed.
 
-GitHub Pages remains a read-only view because it cannot execute local Tesseract or Python. For a complete workflow, run `server.py` on the analyst's workstation or an approved private host. The server binds to `127.0.0.1` by default; non-loopback binding requires the explicit `--allow-network` flag and should be protected by an authenticated reverse proxy.
+GitHub Pages runs the complete workflow in the browser using PDF.js and Tesseract.js; the PDF is not uploaded or persisted. The first browser run downloads the version-pinned OCR runtime and language data. For faster native processing and local audit persistence, run `server.py` on the analyst's workstation or an approved private host. The server binds to `127.0.0.1:8099` by default; non-loopback binding requires the explicit `--allow-network` flag and should be protected by an authenticated reverse proxy.
 
 Review these files after each run:
 

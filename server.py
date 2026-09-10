@@ -126,6 +126,7 @@ def run_ocr(pdf_bytes: bytes, profile: str | None) -> dict[str, object]:
     checks = read_csv(output_dir / "verification_checks.csv")
     score = score_payment_capacity(report.get("metrics", []))
     response = {
+        "execution_mode": "local_api",
         "run_id": run_id,
         "report": report,
         "candidates": candidates[:250],
@@ -263,7 +264,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 def main() -> int:
     parser = argparse.ArgumentParser(description="Serve the dashboard with local OCR and scoring APIs")
     parser.add_argument("--host", default="127.0.0.1")
-    parser.add_argument("--port", type=int, default=8088)
+    parser.add_argument("--port", type=int, default=8099)
     parser.add_argument("--allow-network", action="store_true", help="Required when binding to a non-loopback host")
     args = parser.parse_args()
     if args.host not in {"127.0.0.1", "localhost", "::1"} and not args.allow_network:

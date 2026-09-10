@@ -2,8 +2,8 @@
 
 Internal-reference dashboard for Iraq collections and cross-border payment risk. The repository supports two modes:
 
-- **Full local workbench:** start `server.py`, then upload scanned reports, review extracted evidence, complete missing inputs, score the 10 metrics, and apply Red Flags in the same page.
-- **Static read-only dashboard:** open `index.html` or publish with GitHub Pages. Historical results remain visible, but browser-only hosting cannot run Tesseract OCR.
+- **Online browser workbench:** open the GitHub Pages site, then upload scanned reports, review extracted evidence, complete missing inputs, score the 10 metrics, and apply Red Flags. PDF rendering and OCR run inside the browser; the PDF is not uploaded.
+- **Optional local high-performance workbench:** start `server.py` to use native Tesseract and persisted privacy-minimised run evidence.
 
 The OCR path is local Arabic/English processing and does not require a cloud OCR service or API key.
 
@@ -14,10 +14,13 @@ The OCR path is local Arabic/English processing and does not require a cloud OCR
 ```bash
 python3 tools/test_ocr_financials.py
 python3 tools/test_payment_capacity.py
+node tools/test_browser_ocr.cjs
 python3 server.py
 ```
 
-Open <http://127.0.0.1:8088>, go to **扫描财报 OCR**, and use the integrated workbench. The server binds to loopback only by default.
+Online platform: <https://adam123wu.github.io/iraq-treasury-risk-dashboard/>
+
+For native local OCR, open <http://127.0.0.1:8099> after starting `server.py`. The server binds to loopback only by default; port 8099 avoids the existing service on port 8088.
 On macOS, `start_dashboard.command` provides the same start action for Finder users.
 
 ## Data discipline
@@ -59,6 +62,10 @@ Reviewed fixtures for the official H1 2026 Asiacell and Zain Iraq scans are keye
 - `GET /api/runs/latest`: reload the latest privacy-minimised local result.
 
 Uploads are capped at 30 MB and 80 pages. Only one OCR job runs at a time. Uploaded source PDFs live in a temporary directory and are deleted after processing; full-page OCR text is not retained. Privacy-minimised live outputs are written under `outputs/live/`, which is excluded from Git.
+
+## GitHub Pages browser OCR
+
+When the local API is unavailable, the same page automatically switches to browser mode. PDF.js 6.3.289 renders the PDF pages and Tesseract.js 7.0.0 performs Arabic/English OCR in a Web Worker. Version-pinned runtime files and language models are downloaded from the projects' documented CDNs; the selected PDF and rendered canvases remain in browser memory and are not sent to those CDNs. Results are not persisted unless the analyst downloads the audit JSON.
 
 See `MIGRATION.md` for deployment, privacy, and verification steps.
 
