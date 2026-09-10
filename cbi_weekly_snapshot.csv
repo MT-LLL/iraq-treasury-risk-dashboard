@@ -1,0 +1,11 @@
+snapshot_date,category,metric,value,unit,source_date,frequency,weekly_change,collection_relevance,status,source_url
+2026-09-10,fx,Official USD/IQD,1310,IQD per USD,2026-09-10,D,unchanged versus prior weekly observation,"Official conversion benchmark; does not prove timely access to transferable USD",stable,https://www.cbi.iq/
+2026-09-10,open_market,W524 tenor,7,days,2026-09-06,W/E,new weekly operation,"Evidence of short-term IQD liquidity management; not direct FX availability",observe,https://cbi.iq/news/view/3312
+2026-09-10,open_market,W524 interest rate,5.25,percent,2026-09-06,W/E,new weekly operation,"Short-term CBI bill pricing",observe,https://cbi.iq/news/view/3312
+2026-09-10,open_market,B359 tenor,14,days,2026-09-09,E,next execution 2026-09-13,"Next observable money-market event; conventional bill rate not disclosed in announcement",pending_result,https://cbi.iq/news/view/3319
+2026-09-10,banking_system,Liquid assets / short-term liabilities,>60,percent,2026-09-05,E,new official system-level disclosure,"System buffer only; cannot be extrapolated to an individual payment bank",buffer,https://cbi.iq/news/print_news/3309
+2026-09-10,bank_supervision,Al-Taif Bank status,guardianship and gradual withdrawals,text,2026-09-08,E,regulatory intervention escalated,"Direct delay risk if the payment chain uses Al-Taif Bank",high_risk,https://cbi.iq/news/view/3318
+2026-09-10,fx_channel,FX company licences withdrawn,4,companies,2026-09-07,E,4 withdrawals across 2026-09-06 to 2026-09-07,"Tighter compliance environment and weaker continuity for non-bank FX channels",tightening,https://www.cbi.iq/news/section/77
+2026-09-10,cbi_balance_sheet,Latest available CBI financial-position month,2026-06,month,2026-06,M,no new monthly table,"Keep reserves and balance-sheet baseline stale; do not extrapolate weekly",stale,https://cbi.iq/page/73
+2026-09-10,monetary_report,Latest analytical monetary and financial variables report,2026-01,month,2026-01,M,no new report,"Old baseline only; do not use for current-week liquidity conclusion",stale,https://cbi.iq/page/163
+2026-09-10,social,Latest public Facebook post,Al-Taif Bank deposits statement,text,2026-09-08,E,matches CBI website statement,"Fast discovery channel only; official website is the source of record",verified_public,https://web.facebook.com/cbi.iraq/

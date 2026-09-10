@@ -25,7 +25,9 @@ On macOS, `start_dashboard.command` provides the same start action for Finder us
 
 ## Data discipline
 
-The latest public-source snapshot is dated 6 September 2026; the customer-capacity model was updated on 9 September 2026. Public figures without a newly accessible primary-source update are explicitly labelled **stale** and retain their original data cut-off. The dashboard reports collection-risk level, direction, A/B/C/D scores, and attribution; it does not estimate collection days.
+The CBI weekly snapshot is dated 10 September 2026; the customer-capacity model was updated on 9 September 2026. Public figures without a newly accessible primary-source update are explicitly labelled **stale** and retain their original data cut-off. The dashboard reports collection-risk level, direction, A/B/C/D scores, and attribution; it does not estimate collection days.
+
+The dashboard now includes a dedicated CBI weekly analysis. It separates daily official FX rates, weekly/event-driven money-market operations, banking supervision announcements, and monthly monetary/balance-sheet publications. The public CBI Facebook page is used as a fast discovery and cross-check channel; the CBI website remains the source of record. The machine-readable snapshot is `cbi_weekly_snapshot.csv`.
 
 Layer C now uses a 10-metric, 100-point customer payment-capacity model covering liquidity, cash flow, leverage, debt service, working-capital days, and our exposure. Good / average / risk bands receive 100 / 60 / 0 points before weighting. The model produces a score only when all 10 metrics are valid. Any confirmed Red Flag reduces the final A–D rating by at least one grade. Until the required customer financials and our AR are supplied, Layer C remains unavailable rather than being treated as zero.
 

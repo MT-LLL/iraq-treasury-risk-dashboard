@@ -32,12 +32,12 @@
 <div class="shell">
   <aside class="sidebar">
     <div class="brand"><div class="brand-mark">IQ</div><div><b>Treasury Risk Desk</b><small>Iraq · CFO cockpit</small></div></div>
-    <div class="nav-label">监控</div><nav class="nav"><a href="#overview"><i></i>风险总览</a><a href="#capacity-model"><i></i>付款能力模型</a><a href="#ocr"><i></i>扫描财报 OCR</a><a href="#risk-matrix"><i></i>风险矩阵</a><a href="#method"><i></i>评价工具</a><a href="#weekly"><i></i>周更预警</a><a href="#queue"><i></i>付款队列</a><a href="#trends"><i></i>趋势与路线</a><a href="#customers"><i></i>客户健康</a><a href="#channels"><i></i>支付通道</a></nav>
+    <div class="nav-label">监控</div><nav class="nav"><a href="#overview"><i></i>风险总览</a><a href="#cbi-weekly"><i></i>CBI 每周数据</a><a href="#capacity-model"><i></i>付款能力模型</a><a href="#ocr"><i></i>扫描财报 OCR</a><a href="#risk-matrix"><i></i>风险矩阵</a><a href="#method"><i></i>评价工具</a><a href="#weekly"><i></i>周更预警</a><a href="#queue"><i></i>付款队列</a><a href="#trends"><i></i>趋势与路线</a><a href="#customers"><i></i>客户健康</a><a href="#channels"><i></i>支付通道</a></nav>
     <div class="nav-label">执行</div><nav class="nav"><a href="#scenarios"><i></i>情景推演</a><a href="#actions"><i></i>行动清单</a><a href="#sources"><i></i>数据源</a></nav>
     <div class="side-foot"><strong>每周日 12:00 自动周更</strong><span>Asia/Baghdad · 本地生成待发布</span></div>
   </aside>
   <main class="main">
-    <div class="topline"><div class="eyebrow">Iraq Representation Office · Treasury Intelligence</div><div class="meta"><i class="live"></i>已接入 25 个来源 · OCR评分工作台 v10</div></div>
+    <div class="topline"><div class="eyebrow">Iraq Representation Office · Treasury Intelligence</div><div class="meta"><i class="live"></i>已接入 32 个来源 · CBI周报 + OCR评分工作台 v12</div></div>
 
     <section class="hero" id="overview"><div class="hero-grid">
       <div><div class="classification"><span class="pill red">内部参考 · 财经密级</span><span class="pill blue">🇮🇶 伊拉克资金洞察</span><span class="pill red">风险方向：恶化 ↑</span><span class="pill gray">扫描财报 OCR · 上传核验评分已融合</span></div><h1>当前回款风险：高，<br>主因是“钱出不去”</h1><p class="lead">工具综合国家美元供给、跨境支付通道和客户付款能力进行评价，付款意愿单独作为定性归因。最新公开证据显示：巴格达现钞售汇价较 CBI 官方价溢价约 <b>18.7%</b>，霍尔木兹状态升至 <b>CRITICAL</b>，且 OFAC 新增土耳其银行制裁。客户付款能力现改用 <b>10 个核心指标、100 分</b>模型；Asiacell 与 Zain Iraq 的扫描财报已由本地 OCR 提取并完成财务勾稽，但我方 AR、受限现金及部分会计口径仍待确认，因此 C 层暂不输出最终评级。</p><div class="callout"><div>⚠</div><div><b>本周唯一最重要动作：把伊拉克境内 FX 转出风险转移给客户集团。</b><br><span>要求 Zain Group / Ooredoo Group 确认境外账户或集团层面 USD 付款路径，并同时完成三类往来银行名单比对；土耳其路径新增 OFAC 筛查。</span></div></div></div>
@@ -58,6 +58,25 @@
 
     <div class="section-head"><div><h2>回款风险评价结果</h2><p>评分用于比较风险强弱与定位原因，不估计回款天数</p></div><p>分数越低，风险越高</p></div>
     <section class="panel"><div class="risk-layers"><div class="risk-layer" style="--accent:var(--blue);--score:34%"><small>A · 国家美元供给</small><b class="bad">34 / 高风险</b><span>海峡升至 CRITICAL、油收旧值 stale</span><div class="meter"><i></i></div></div><div class="risk-layer" style="--accent:var(--purple);--score:25%"><small>B · 跨境支付通道</small><b class="bad">25 / 高风险</b><span>溢价走阔、土耳其路径新增 OFAC 风险</span><div class="meter"><i></i></div></div><div class="risk-layer internal-placeholder"><small>C · 客户付款能力</small><b>6 / 10 已填</b><span>Asiacell 覆盖 65% · Zain Iraq 覆盖 60%</span><div class="meter"></div></div><div class="risk-layer internal-placeholder"><small>D · 我方经营与现金流</small><b>— / 待接入</b><span>内部数据缺失，不参与评分</span><div class="meter"></div></div></div><div class="note" style="margin-top:12px">当前风险指数：30 = 50% × A34 + 50% × B25（四舍五入）。C 层已预填两家运营商公开财报可计算指标，但 10 项未齐前不参与总分；付款意愿保留为定性归因。风险方向仍为<b>恶化</b>，但 30 分与上一版 40 分因口径变化不可直接比较。</div></section>
+
+    <div class="section-head" id="cbi-weekly"><div><h2>CBI 每周核心数据分析</h2><p>本周快照截至 2026-09-10；日频、周频、月频与事件驱动分开，不用旧月度值冒充周度更新</p></div><p>官方站为主源 · Facebook 作发布速度交叉核验</p></div>
+    <section class="kpis">
+      <article class="kpi green"><div class="kpi-top"><span>CBI 官方 USD / IQD</span><span class="freq">D</span></div><b>1,310</b><div class="change good">本周观察值不变</div><div class="sub">2026-09-10 检查 · 官方牌价不等于实际可获得美元</div></article>
+      <article class="kpi orange"><div class="kpi-top"><span>银行系统流动性比率</span><span class="freq">E</span></div><b>&gt;60%</b><div class="change warn">CBI 系统口径</div><div class="sub">流动资产 ÷ 短期负债 · 2026-09-05；不可外推到单家银行</div></article>
+      <article class="kpi purple"><div class="kpi-top"><span>最新 7 天央行票据</span><span class="freq">W</span></div><b>5.25%</b><div class="change">W524 · 期限 7 天</div><div class="sub">2026-09-08 执行；表示短期流动性操作活跃</div></article>
+      <article class="kpi orange"><div class="kpi-top"><span>下一观察点</span><span class="freq">E</span></div><b>B359</b><div class="change warn">期限 14 天 · 9/13 执行</div><div class="sub">公告未披露传统票据利率；等待结果，不预填</div></article>
+    </section>
+    <section class="panel history" style="margin-top:14px"><table><thead><tr><th>CBI 主题</th><th>最新官方披露</th><th>日期 / 频率</th><th>本周变化</th><th>与回款的关系</th><th>状态</th></tr></thead><tbody>
+      <tr><td><b>官方汇率</b></td><td>1 USD = 1,310 IQD</td><td>2026-09-10 检查 · D</td><td>较本周前值不变</td><td>官方换汇基准稳定，但不能证明客户或银行可及时取得并汇出 USD。</td><td><span class="traffic green"><i></i>稳定</span></td></tr>
+      <tr><td><b>公开市场操作</b></td><td>W524：7 天、5.25%；B359：14 天、9/13 执行</td><td>2026-09-06 / 09 · W/E</td><td>短期票据继续发行</td><td>反映 CBI 正在管理银行体系 IQD 流动性；不是外汇可得性的直接证据。</td><td><span class="traffic yellow"><i></i>观察</span></td></tr>
+      <tr><td><b>银行体系流动性</b></td><td>流动资产 / 短期负债超过 60%</td><td>2026-09-05 · E</td><td>CBI 新增官方口径</td><td>减弱“全系统无流动性”判断；不替代付款行、代理行的单体核验。</td><td><span class="traffic green"><i></i>缓冲</span></td></tr>
+      <tr><td><b>Al-Taif Bank</b></td><td>9/3 被接管；9/8 表示提款及履约将按监管优先级逐步安排，工资优先</td><td>2026-09-03–08 · E</td><td>监管处置升级</td><td>若付款链路涉及该行，回款时点存在直接延迟风险，应立即切换或核验替代银行。</td><td><span class="traffic red"><i></i>高风险</span></td></tr>
+      <tr><td><b>外汇机构许可</b></td><td>9/6 撤销 3 家 A 类兑换公司许可；9/7 再撤销 1 家经纪公司许可</td><td>2026-09-06–07 · E</td><td>本周共 4 家</td><td>表明合规清理仍在推进；非银行换汇渠道的连续性和可用性承压。</td><td><span class="traffic yellow"><i></i>收紧</span></td></tr>
+      <tr><td><b>CBI 资产负债表</b></td><td>官网最新可见月份为 2026-06</td><td>2026-06 · M</td><td>本周无新月表</td><td>储备、资产和负债基线继续标 stale；未发布时不作周度外推。</td><td><span class="stale">stale</span></td></tr>
+      <tr><td><b>货币与金融变量报告</b></td><td>官网最新可见报告为 2026-01</td><td>2026-01 · M</td><td>本周无新版</td><td>货币量、政府收支与储备分析只能作为旧基线，不用于当周流动性结论。</td><td><span class="stale">stale</span></td></tr>
+      <tr><td><b>官方 Facebook</b></td><td>最新公开帖：关于 Al-Taif Bank 存款的特别声明；与官网 9/8 内容一致</td><td>2026-09-08 · E</td><td>已纳入小时级扫描</td><td>用来更快发现监管信号；正式判断仍回链 CBI 官网原文。</td><td><span class="traffic green"><i></i>已接入</span></td></tr>
+    </tbody></table><div class="source-line"><a href="https://www.cbi.iq/">CBI 首页 / 官方牌价</a> · <a href="https://cbi.iq/news/view/3312">W524 公告</a> · <a href="https://cbi.iq/news/view/3319">B359 / ICD176 公告</a> · <a href="https://cbi.iq/news/print_news/3309">银行系统流动性声明</a> · <a href="https://cbi.iq/news/view/3318">Al-Taif 存款声明</a> · <a href="https://web.facebook.com/cbi.iraq/">CBI 官方 Facebook</a> · <a href="cbi_weekly_snapshot.csv">下载本周 CSV</a></div></section>
+    <div class="note" style="margin-top:12px">周报口径：每周汇总日频与事件数据；月度/季度项目只在 CBI 发布新文件时更新。Facebook 受 Meta 登录及页面结构变化影响，可能短时不可读，因此只作发现与交叉核验渠道，CBI 官网始终是最终依据。</div>
 
     <div class="section-head" id="capacity-model"><div><h2>客户付款能力评分模型</h2><p>10 个核心指标 · 权重合计 100% · 数据完整后自动评级</p></div><p>好＝100 · 一般＝60 · 风险＝0</p></div>
     <section class="panel"><div class="capacity-wrap"><table class="capacity-table"><thead><tr><th>#</th><th>维度</th><th>指标与公式</th><th>权重</th><th>好</th><th>一般</th><th>风险</th><th id="capacityCurrentLabel">当前状态</th></tr></thead><tbody>
@@ -204,8 +223,15 @@
       <a class="source" href="https://shafaq.com/en/Economy/US-Iran-war-shock-cuts-36-off-Iraqi-oil-shipments"><span class="source-id">S23</span><div><b>8月伊拉克油运代理信号</b><span>较战前基线低 36%；非 SOMO 官方月度总量</span></div><span class="source-type">media proxy</span></a>
       <a class="source" href="https://uploads.isc.gov.iq/upload/2026/08/11/6a7af9bc8d298.pdf"><span class="source-id">S24</span><div><b>Asiacell H1 2026 扫描财报</b><span>图像PDF · OCR提取 · 4项财务勾稽通过</span></div><span class="source-type">official OCR</span></a>
       <a class="source" href="https://uploads.isc.gov.iq/upload/2026/08/31/6a9554bede623.pdf"><span class="source-id">S25</span><div><b>Zain Iraq H1 2026 扫描财报</b><span>图像PDF · OCR提取 · 4项财务勾稽通过</span></div><span class="source-type">official OCR</span></a>
+      <a class="source" href="https://cbi.iq/news/view/3312"><span class="source-id">S26</span><div><b>CBI W524 / ICD832 公告</b><span>2026-09-06 · 7天 · 5.25% · 9/8执行</span></div><span class="source-type">official weekly</span></a>
+      <a class="source" href="https://cbi.iq/news/view/3319"><span class="source-id">S27</span><div><b>CBI B359 / ICD176 公告</b><span>2026-09-09 · 14天 · 9/13执行</span></div><span class="source-type">official event</span></a>
+      <a class="source" href="https://cbi.iq/news/print_news/3309"><span class="source-id">S28</span><div><b>CBI 银行体系流动性声明</b><span>2026-09-05 · 流动资产/短期负债 &gt;60%</span></div><span class="source-type">official event</span></a>
+      <a class="source" href="https://cbi.iq/news/view/3318"><span class="source-id">S29</span><div><b>CBI Al-Taif Bank 存款声明</b><span>2026-09-08 · 提款与履约按监管优先级逐步安排</span></div><span class="source-type">official event</span></a>
+      <a class="source" href="https://cbi.iq/page/73"><span class="source-id">S30</span><div><b>CBI 财务状况月表索引</b><span>最新可见 2026-06 · 月频</span></div><span class="source-type">official monthly</span></a>
+      <a class="source" href="https://cbi.iq/page/163"><span class="source-id">S31</span><div><b>CBI 货币与金融变量报告</b><span>最新可见 2026-01 · 月频 stale</span></div><span class="source-type">official stale</span></a>
+      <a class="source" href="https://web.facebook.com/cbi.iraq/"><span class="source-id">S32</span><div><b>CBI 官方 Facebook</b><span>公开页已验证；用于最新发布交叉核验</span></div><span class="source-type">official social</span></a>
     </section>
-    <div class="footer"><span>当前基于公开信息；客户能力与内部数据缺失项保持待评估。仅用于内部资金决策参考，不构成对外承诺。</span><span>风险数据截止 2026-09-06 · 双运营商指标预填 2026-09-10 · v11</span></div>
+    <div class="footer"><span>当前基于公开信息；客户能力与内部数据缺失项保持待评估。仅用于内部资金决策参考，不构成对外承诺。</span><span>CBI 周报截止 2026-09-10 · 双运营商指标预填 2026-09-10 · v12</span></div>
   </main>
 </div>
 <script src="tools/browser_ocr.js"></script>
