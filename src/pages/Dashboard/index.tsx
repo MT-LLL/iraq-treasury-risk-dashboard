@@ -42,7 +42,7 @@ import {
   Typography,
   theme,
 } from 'antd';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import OcrWorkbench from './OcrWorkbench';
 import { capacityRows, cbiRows, riskRows, sourceRows, type Tone } from './data';
 import './style.less';
@@ -298,12 +298,18 @@ function Sources() {
 function DashboardApp() {
   const screens = Grid.useBreakpoint();
   const [active, setActive] = useState('overview');
+  const [collapsed, setCollapsed] = useState(false);
   const [methodOpen, setMethodOpen] = useState(false);
   const route = useMemo(() => ({ path: '/', routes: menuItems }), []);
+
+  useEffect(() => {
+    if (screens.lg !== undefined) setCollapsed(!screens.lg);
+  }, [screens.lg]);
 
   const navigate = (key: string) => {
     const normalized = key.replace(/^\/+/, '') || 'overview';
     setActive(normalized);
+    if (screens.md === false) setCollapsed(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -319,7 +325,8 @@ function DashboardApp() {
     fixedHeader
     fixSiderbar
     siderWidth={228}
-    collapsed={screens.lg === false}
+    collapsed={collapsed}
+    onCollapse={setCollapsed}
     menu={{ request: async () => menuItems }}
     menuProps={{ selectedKeys: [active, `/${active}`], onClick: ({ key }) => navigate(String(key)) }}
     token={{
