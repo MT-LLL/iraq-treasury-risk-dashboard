@@ -32,4 +32,19 @@ assert.equal(incomplete.complete, false);
 assert.equal(incomplete.base_score, null);
 assert.equal(incomplete.available_weight_pct, 90);
 
-console.log('Browser OCR scoring tests: 3/3 passed');
+const profiles = JSON.parse(fs.readFileSync(require.resolve('./ocr_profiles.json'), 'utf8'));
+const asiacell = BrowserOCR.buildReviewedProfile('tasc_q2_2026', profiles);
+assert.equal(asiacell.report.report_entity, 'Asiacell Communications PJSC');
+assert.equal(asiacell.report.verified_metric_count, 9);
+assert.equal(asiacell.score.available_metric_count, 6);
+assert.equal(asiacell.score.available_weight_pct, 65);
+assert.equal(asiacell.score.complete, false);
+
+const zain = BrowserOCR.buildReviewedProfile('tzni_q2_2026', profiles);
+assert.equal(zain.report.report_entity, 'Al-Khatem Telecommunications / Zain Iraq');
+assert.equal(zain.report.verified_metric_count, 10);
+assert.equal(zain.score.available_metric_count, 6);
+assert.equal(zain.score.available_weight_pct, 60);
+assert.equal(zain.score.complete, false);
+
+console.log('Browser OCR scoring tests: 5/5 passed');

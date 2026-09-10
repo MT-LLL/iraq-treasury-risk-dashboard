@@ -29,6 +29,8 @@ The latest public-source snapshot is dated 6 September 2026; the customer-capaci
 
 Layer C now uses a 10-metric, 100-point customer payment-capacity model covering liquidity, cash flow, leverage, debt service, working-capital days, and our exposure. Good / average / risk bands receive 100 / 60 / 0 points before weighting. The model produces a score only when all 10 metrics are valid. Any confirmed Red Flag reduces the final A–D rating by at least one grade. Until the required customer financials and our AR are supplied, Layer C remains unavailable rather than being treated as zero.
 
+The online page now preloads both reviewed H1 2026 operator profiles without requiring another PDF upload. Asiacell has 6/10 calculable metrics covering 65% of model weight; Zain Iraq has 6/10 covering 60%. The remaining cells stay explicitly pending because debt/available-cash classifications, certain statement line items, and our internal AR are not yet verified.
+
 Use `customer_payment_capacity_model.csv` as the machine-readable rule table. The OCR-enabled, formula-driven Excel model is stored at `outputs/payment-capacity-ocr-20260910/customer_payment_capacity_model_ocr.xlsx`.
 
 The live scoring engine is `tools/payment_capacity.py`. It accepts only `verified*` OCR values or explicit analyst overrides. “FCF close to zero” defaults to ±1% of revenue and is adjustable in the workbench. A formal total is returned only when all 10 metrics are available.

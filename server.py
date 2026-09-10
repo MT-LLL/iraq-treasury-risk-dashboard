@@ -173,7 +173,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.json_response({
                 "ok": True,
                 "ready": dependencies["tesseract"]["available"] and dependencies["pdftoppm"]["available"],
-                "version": "v10-ocr-workbench",
+                "version": "v11-operator-prefill",
                 "dependencies": dependencies,
                 "limits": {"upload_mb": MAX_UPLOAD_BYTES // 1024 // 1024, "pages": MAX_PAGES},
                 "profiles": profile_options(),

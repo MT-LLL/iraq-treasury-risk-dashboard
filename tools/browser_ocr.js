@@ -183,6 +183,30 @@
     return { complete, available_metric_count: rows.filter(row => row.value !== null).length, available_weight_pct: availableWeight, base_score: baseScore, base_grade: baseGrade, final_grade: baseGrade && active.length ? downgrade(baseGrade) : baseGrade, red_flag_downgrade: Boolean(baseGrade && active.length), active_red_flags: active, fcf_near_zero_pct: tolerance, values, provenance, metrics: rows };
   }
 
+  function buildReviewedProfile(profileKey, profiles) {
+    const profile = profiles?.[profileKey];
+    if (!profile) throw new Error('未找到该运营商的复核档案');
+    const metrics = metricRows(profile, [], true), checks = runChecks(profile, true);
+    const report = {
+      schema_version: 2, source_filename: '未打包（复核快照）', source_sha256: profile.sha256, source_pdf_bundled: false,
+      profile: profileKey, profile_hash_match: true, report_entity: profile.entity || '', report_period: profile.period || '', unit: profile.unit || '',
+      page_count: null, text_layer_detected: false, ocr_engine: '已复核 OCR 档案预载', privacy_mode: 'reviewed_financial_rows_only',
+      verified_metric_count: metrics.filter(row => String(row.status).startsWith('verified')).length,
+      review_metric_count: metrics.filter(row => String(row.status).startsWith('review')).length,
+      missing_metric_count: metrics.filter(row => row.status === 'missing').length,
+      verification_checks_passed: checks.filter(row => row.status === 'pass').length, verification_checks_total: checks.length, metrics, checks
+    };
+    return {
+      ok: true, execution_mode: 'reviewed_profile', run_id: `${profileKey}-reviewed`, report, candidates: [], checks,
+      score: scorePaymentCapacity({ metrics }),
+      privacy: { source_pdf_transmitted: false, raw_page_text_retained: false, persisted_directory: '预置复核档案（只读）' }
+    };
+  }
+
+  async function loadReviewedProfile(profileKey) {
+    return buildReviewedProfile(profileKey, await loadProfiles());
+  }
+
   async function run(file, requestedProfile, onProgress = () => {}) {
     if (!file || file.size > 30 * 1024 * 1024) throw new Error('请选择不超过 30 MB 的 PDF');
     const buffer = await file.arrayBuffer();
@@ -237,5 +261,5 @@
     return { ok: true, execution_mode: 'browser', run_id: new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14) + '-browser', report, candidates: candidates.slice(0, 250), checks, score, privacy: { source_pdf_transmitted: false, raw_page_text_retained: false, persisted_directory: '未持久化（浏览器内存）' } };
   }
 
-  window.BrowserOCR = { run, scorePaymentCapacity, loadProfiles, defaults: { fieldLabels: FIELD_LABELS, redFlags: RED_FLAGS }, versions: { tesseract: '7.0.0', pdfjs: '6.3.289' } };
+  window.BrowserOCR = { run, scorePaymentCapacity, loadProfiles, loadReviewedProfile, buildReviewedProfile, defaults: { fieldLabels: FIELD_LABELS, redFlags: RED_FLAGS }, versions: { tesseract: '7.0.0', pdfjs: '6.3.289' } };
 })();
