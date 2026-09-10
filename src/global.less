@@ -1,0 +1,32 @@
+:root {
+  color-scheme: dark;
+  --navy-950: #07111f;
+  --navy-900: #0b1728;
+  --navy-800: #102238;
+  --line: rgba(135, 164, 196, 0.18);
+  --muted: #8fa2ba;
+  --cyan: #37c2ff;
+  --green: #3ddc97;
+  --amber: #ffbd59;
+  --red: #ff6b7a;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #07111f; }
+a { color: inherit; }
+
+.ant-pro-layout .ant-layout {
+  background:
+    radial-gradient(circle at 82% -10%, rgba(39, 120, 205, 0.22), transparent 34%),
+    radial-gradient(circle at 4% 40%, rgba(29, 193, 176, 0.08), transparent 22%),
+    #07111f !important;
+}
+
+.ant-pro-sider { border-inline-end: 1px solid var(--line); }
+.ant-pro-layout-content { padding-block: 0 !important; }
+.ant-pro-top-nav-header-main-left { min-width: 280px !important; }
+
+@media (max-width: 768px) {
+  .ant-pro-layout-content { padding-inline: 12px !important; }
+}

@@ -2,6 +2,8 @@
 
 Internal-reference dashboard for Iraq collections and cross-border payment risk. The repository supports two modes:
 
+The interface is now built on the **Ant Design Pro v6** application stack: React 19, Umi Max 4, Ant Design 6, Pro Components and AntV plots. The former single-file v12 dashboard is retained as `legacy-v12.html` for audit/rollback only; `index.html` is the generated GitHub Pages entry.
+
 - **Online browser workbench:** open the GitHub Pages site, then upload scanned reports, review extracted evidence, complete missing inputs, score the 10 metrics, and apply Red Flags. PDF rendering and OCR run inside the browser; the PDF is not uploaded.
 - **Optional local high-performance workbench:** start `server.py` to use native Tesseract and persisted privacy-minimised run evidence.
 
@@ -12,11 +14,17 @@ The OCR path is local Arabic/English processing and does not require a cloud OCR
 ## Quick start
 
 ```bash
+pnpm install
+pnpm dev
+pnpm typecheck
+pnpm build:pages
 python3 tools/test_ocr_financials.py
 python3 tools/test_payment_capacity.py
 node tools/test_browser_ocr.cjs
 python3 server.py
 ```
+
+`pnpm build:pages` creates the production bundle under `dist/` and publishes the hashed output into the repository root because this GitHub Pages site deploys directly from `main`/root. Use Node.js 22 or newer.
 
 Online platform: <https://adam123wu.github.io/iraq-treasury-risk-dashboard/>
 

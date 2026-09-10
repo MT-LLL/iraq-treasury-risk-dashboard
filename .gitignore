@@ -3,3 +3,8 @@ __pycache__/
 *.py[cod]
 .DS_Store
 outputs/live/
+node_modules/
+dist/
+src/.umi/
+src/.umi-production/
+.umi/
