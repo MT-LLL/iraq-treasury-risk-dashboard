@@ -26,7 +26,9 @@ python3 server.py
 
 `pnpm build:pages` creates the production bundle under `dist/` and publishes the hashed output into the repository root because this GitHub Pages site deploys directly from `main`/root. Use Node.js 22 or newer.
 
-Online platform: <https://adam123wu.github.io/iraq-treasury-risk-dashboard/>
+Online platform: <https://mt-lll.github.io/iraq-treasury-risk-dashboard/>
+
+Maintainer: 李辉（621351）
 
 For native local OCR, open <http://127.0.0.1:8099> after starting `server.py`. The server binds to loopback only by default; port 8099 avoids the existing service on port 8088.
 On macOS, `start_dashboard.command` provides the same start action for Finder users.
